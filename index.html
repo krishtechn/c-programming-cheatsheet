@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="prism.css">
+       <script src="prism.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+      <title>c programming tutorial</title>
+</head>
+
+<body>
+      <div class="navbar">
+            <p>c programming tuorial</p>
+      </div>
+
+      <div class="container">
+
+     <ol>
+            <li><h3>c programming tutorial: </h3><p>//first code in c programming printing Hello world<p></li></ol>
+<pre class="language-html"><code>#include&lt;stdio.h&gt;             
+//header file            
+int main(){   
+
+//	printing hello world 
+
+printf("hello world");
+return 0;
+}</code></pre>
+     
+            <li><h3>c programming tutorial: </h3><p>//variable and constant in c programming<p></li></ol>
+<pre class="language-html"><code>#include&lt;stdio.h&gt;             
+int main(){
+                  
+//	syntax to declare variable
+            
+//data-type variable_name = value
+//data-type = int,float,char,double
+//variable = a,b;
+//value = 10,20,30......
+
+//syntax to declare constant
+//const data_type variable_name = value;
+
+int a = 10; 
+int b = 10.4;
+
+//  10 + 10.4 = 20.4 result
+//calculating 
+float sum = a + b;
+
+//printing sum of two number 
+
+printf("the sum of two number is : %f", sum);
+}</code></pre>
+                 
+
+            <li><h3>c programming tutorial: </h3><p>//Data type in c programming</p></li></ol>
+            <pre class="language-html"><code>#include&lt;stdio.h&gt;            
+      int main(){                        
+      
+      // variable
+      
+      int a = 10;
+      float b = 1.0;
+      char ch = 'A';
+      double d = 15000;                        
+      
+      //variable
+      
+      printf("the integer value is : %d\n", a);                  
+      printf("the float value is : %f\n", b);                  
+      printf("the char value is : %c\n", ch);                  
+      printf("the double is : %lg\n", d);	                        
+      return 0;
+      }                                    
+      //datatypes in C programming
+      // int : 1,2,3,1000, -1000;
+      //float : 1.0,13.4;
+      //char : A-Z, a-z, symbol[@,#,%]                  
+                        
+      }</code></pre>
+        
+
+
+    <li><h3>c programming tutorial: </h3><p>Area of Circle</p></li></ol>
+    <pre class="language-html"><code>#include&lt;stdio.h&gt;
+int main(){ 
+
+// variable  
+
+float radius,area;
+const float pi = 3.14;
+printf("enter radius: ");
+scanf("%f",&radius);
+
+//calculating area
+
+area = pi * radius * radius;
+
+//printing result
+
+printf("the area of circle is : %f", area);
+return 0;
+}</code></pre>
+      
+
+      <li><h3>c programming tutorial: </h3><p>//wap in c to calculate the area of rectangle enter by the user.</p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+ int main(){  
+ //	declaring variable
+ 
+ int L,b,area;
+ printf("enter Length: \n");
+ scanf("%d",&L); 
+ printf("enter breadth: \n");
+ scanf("%d",&b);
+
+ //calculating area
+ area = L * b;
+ 
+ //printing area
+ 
+printf("the area of rectangle is : %d",area);
+return 0;
+}</code></pre>
+     
+      <li><h3>c programming tutorial: </h3><p>//wap in c to program to find palindrome or not</p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+int main(){
+int n,rem,rev = 0;
+printf("enter any integer: \n");
+scanf("%d",&n);
+while(n!=0){
+rem = n % 10;
+rev = rev * 10 + rem;
+n = n/10;
+}
+if(n == rev){
+printf("palindrome");
+}else{
+printf("not palindrome");
+}
+return 0;
+}
+</code></pre>
+     
+      <li><h3>c programming tutorial: </h3><p>//calculator project using c++ programming</p></li></ol>
+      <pre class="language-html"><code>#include&lt;iostream.h.h&gt;
+                
+int main(){
+int num1 , num2, result;
+char op;                        
+do{
+cout <<"\nenter first number: ";
+cin >>num1;                              
+cout <<"\nenter operator +,-,*,/,%: ";
+cin >>op;                                                            
+cout <<"\nenter second number: ";
+cin >>num2;                                                            
+if(op == '+') result = num1 + num2;                          
+if(op == '-') result = num1 - num2;                              
+if(op == '*') result = num1 * num2;                              
+if(op == '/') result = num1 / num2;                   
+if(op == '%') result = num1 % num2;                        
+cout <<"\n the result is : "&lt;&lt;result;
+}while(op = 'e');                        
+return 0;
+}                  
+}</code></pre>
+     
+     
+      <li><h3>c programming tutorial: </h3><p>//wap in c to calculate weather the number is divisible or not. <p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+int main(){                                                
+//	declaring variable num1
+int num1;
+printf("enter number : ");
+scanf("%d",&num1);                  
+if(num1 % 2 == 0){
+printf("number is divisible by 2");
+}                        
+return 0;           
+}</code></pre>
+     
+      <li><h3>c programming tutorial: </h3><p>//factorial number using c programming<p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+  int main(){
+int n,d;
+printf("enter the factorial number: \n");
+scanf("%d",&n); 
+
+//	calling a function
+
+d = fact(n);
+printf("the factorial number is : %d\n",d);
+return 0;                  }                 
+int fact(int x){
+if(x == 0){
+return 0;
+}else if(x == 1){
+return 1;
+}else{
+return(x*fact(x-1));
+}                 
+}</code></pre>
+     
+
+<li><h3>c programming tutorial: </h3><p>//for loop in c programming<p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt; 
+int main(){                        
+int i;
+int number;
+printf("enter any number\n");
+scanf("%d",&number);
+for(i=0; i&lt;number; i++){
+printf("\nkrishna kharal");
+}
+}</code></pre>
+
+<li><h3>c programming tutorial: </h3><p>//If statement in c programming<p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;             
+int main(){                                          
+
+//	declaring variable age
+
+int age;                                                
+printf("enter your age: \n");
+scanf("%d",&age);              
+
+//	if statement 
+
+if(age >= 18){
+printf("you are voter");
+}else{
+printf("you are not voter");
+}                        
+return 0;                  
+}</code></pre>
+
+<li><h3>c programming tutorial: </h3><p>//Largest number among three number in c programming<p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt; 
+int main(){
+                        
+ //	declaring variable
+                  
+ int a,b,c,large;
+printf("enter a: \n");
+scanf("%d",&a);
+printf("enter b: \n");
+scanf("%d",&b);
+printf("enter c: \n");
+scanf("%d",&c);
+
+//logic start from here
+
+if(a > b && a > c){
+("a is largest");
+}else if(b > a && b > c){
+("b is largest");
+}else{
+("c is largest");
+}
+}</code></pre>
+
+
+
+<li><h3>c programming tutorial: </h3><p>//leap year in c programming<p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+int main(){
+                        
+//	declare variable num and i
+
+int num,i;
+printf("enter any number: ");
+scanf("%d",&num);                  
+for(i=0; i<=10; i++){
+printf(num*i);
+}                  
+return 0;
+}</code></pre>
+
+
+
+<li><h3>c programming tutorial: </h3><p>//switch statement in c programming<p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+int main(){                        
+int day;
+printf("enter day: ");
+scanf("%d",&day);
+                        
+switch(day){
+case 1:
+printf("sunday");
+break;                              
+case 2:
+printf("monday");	
+break;                                                                        
+case 3:
+printf("tuesday");
+break;                                                                                                            
+case 4:
+printf("wednesday");
+break;                                                                        
+case 5:
+printf("thuesday");
+break;                                    
+case 6:
+printf("friday");
+break;                                    
+case 7:
+printf("saturday");
+break;                                    
+default:
+printf("please enter valid number to show day");
+}                        
+return 0;
+}
+</code></pre>
+
+
+<li><h3>c programming tutorial: </h3><p>//multiplication table in c programming<p></li>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+int main(){                        
+int number,i;
+printf("enter number: \n");
+scanf("%d",&number);                        
+for(i=0;i<=10;i++){
+printf("%d * %d = %d\n",number,i,number*i);
+}                        
+return 0;
+}</code></pre>
+
+<li><h3>c programming tutorial: </h3><p>//While loop in c programming<p></li></ol>
+      <pre class="language-html"><code>#include&lt;stdio.h&gt;
+int i;
+int sum = 0;
+int num;
+printf("enter any number: \n");
+scanf("%d",&num);
+do{
+sum = sum + i;
+i++;
+}while(i <= num);                        
+printf("the sum is : %d",sum);                                          }                                                    
+}  
+</code></pre>
+</ol>
+      </div>
+
+</body>
+
+</html>
